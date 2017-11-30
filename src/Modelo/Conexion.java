@@ -14,7 +14,7 @@ public class Conexion {
         
         try{
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/CLINICAMEDICA2", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://192.168.22.35/CLINICAMEDICA2", "root", "");
             System.out.println("Se a conectado a la base de datos");
         }catch(Exception ex){
             
